@@ -1,0 +1,35 @@
+--- dataset summary --- 
+output_file          = credit_50k.csv
+n_samples            = 50000
+n_features           = 6
+pct_missing          = 0.00%
+
+--- model features --- 
+numeric_features     = ['email_age', 'business_age', 'inqury_count', 'business_sales_k']
+categorical_features = ['free_email_domain', 'business_state']
+
+--- dataset performance ---
+Train AUC Score        : 0.984215
+Eval  AUC Score        : 0.979088
+Test  AUC Score        : 0.981694
+
+--- score thresholds ---
+THR 	 FPR 	 TPR	 
+0.62	 0.01	 0.67
+0.40	 0.02	 0.82
+0.31	 0.03	 0.86
+0.25	 0.04	 0.88
+0.20	 0.05	 0.91
+0.16	 0.06	 0.92
+0.14	 0.07	 0.93
+0.12	 0.08	 0.93
+0.11	 0.09	 0.94
+
+--- feature importance  ---
+business_age                  	 1.3193
+inqury_count                  	 1.2330
+business_state                	 0.6318
+email_age                     	 0.4933
+free_email_domain             	 0.3815
+business_sales_k              	 0.3747
+
